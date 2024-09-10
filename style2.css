@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e5e8; /* Легкий сірий фон для всього тіла сторінки */
+}
+
+header {
+    background-color: #007bff; /* Синій фон для заголовка */
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Перша колонка ширша */
+    grid-template-rows: repeat(3, 1fr); /* Три рядки однакової висоти */
+    gap: 20px; /* Простір між комірками */
+    grid-template-areas:
+        "large-item small-item"
+        "large-item small-item"
+        "large-item small-item";
+}
+
+.large-item {
+    grid-area: large-item;
+    background-color: #3f70c9; /* Темно-синій колір для великої комірки */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь для більшого об'єму */
+}
+
+.small-item:nth-child(1) {
+    grid-area: small-item;
+    background-color: #6fa3ef; /* Світло-синій колір для першої маленької комірки */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь для об'єму */
+}
+
+.small-item:nth-child(2) {
+    grid-area: small-item;
+    background-color: #9ab9f5; /* Дуже світло-синій колір для другої маленької комірки */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь для об'єму */
+}
+
+footer {
+    background-color: #007bff; /* Синій фон для футера */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
