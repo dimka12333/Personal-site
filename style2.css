@@ -28,7 +28,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(20, 20, 20);
     text-decoration: none;
     font-weight: bold;
 }
@@ -93,5 +93,6 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 
 
