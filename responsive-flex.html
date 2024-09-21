@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flex Layout</title>
+  <style>
+    /* Внутрішні стилі для адаптивного дизайну */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav, header, section, div, footer {
+      padding: 10px;
+    }
+
+    nav {
+      background-color: royalblue;
+      height: 75px;
+    }
+
+    header {
+      background-color: lightskyblue;
+      height: 400px;
+    }
+
+    section {
+      margin: 75px 100px;
+      background-color: gray;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    p {
+      background-color: khaki;
+      height: 200px;
+    }
+
+    .orange-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .orange-box {
+      background-color: tomato;
+      width: 48%;
+      height: 200px;
+    }
+
+    .prefooter {
+      background-color: silver;
+      height: 40px;
+    }
+
+    footer {
+      background-color: black;
+      height: 100px;
+      color: white;
+    }
+
+    /* Адаптивні стилі */
+    @media (max-width: 768px) {
+      section {
+        margin: 50px 20px;
+      }
+
+      .orange-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>Navbar</nav>
+  <header>Header</header>
+  <section>
+    <p>Yellow Paragraph</p>
+    <div class="orange-container">
+      <div class="orange-box">Orange Box 1</div>
+      <div class="orange-box">Orange Box 2</div>
+    </div>
+  </section>
+  <div class="prefooter">PreFooter</div>
+  <footer>Footer</footer>
+</body>
+</html>
+
